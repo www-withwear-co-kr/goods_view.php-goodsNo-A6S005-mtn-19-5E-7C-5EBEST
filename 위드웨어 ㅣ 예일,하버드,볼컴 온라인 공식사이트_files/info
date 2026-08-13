@@ -1,0 +1,3 @@
+    naver.NaverPayButton.jsonp.callback(
+{"STATE":true,"talk":"N","PRMT":[{"link":"https://new-m.pay.naver.com/paymoney/bankbook/woori/open?from=wr0020","sloganContent":"100% 지급! 최대 1만원 혜택 확인하기","title":"이벤트"}],"TYPE":"A_1_2_Y","KEY":"932A756F-F41E-4610-A52A-181B77BE0E4D","CART":true}
+    );

@@ -1,0 +1,29 @@
+$(document).ready(function() {
+	var bodyW = window.outerWidth;
+	if (bodyW <= 800) {
+		$('body').removeClass('pc').addClass('mobile');
+	}else if(bodyW >= 800){
+		$('body').removeClass('mobile').addClass('pc');
+	}
+	$(window).resize(function (){
+		var bodyW = window.outerWidth;
+		if (bodyW <= 800) {
+			$('body').removeClass('pc').addClass('mobile');
+		}else if(bodyW >= 800){
+			$('body').removeClass('mobile').addClass('pc');
+		}
+	});
+
+	if($('body').is('.mobile')){
+        $('.top-login-link .sch_btn a').click(function(){
+            var submenu = $('.top-search-box');
+            if( submenu.is(':visible') ){
+                submenu.slideUp();
+				$('.top-right').removeClass('SHT');
+            }else{
+                submenu.slideDown();
+				$('.top-right').addClass('SHT');
+            }
+        });
+	}
+});
